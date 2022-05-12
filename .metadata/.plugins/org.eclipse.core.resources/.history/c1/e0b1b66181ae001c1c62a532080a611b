@@ -1,0 +1,27 @@
+package com.chainsys.strings;;
+
+public class StringBuilderDemo {
+	public static void testA()
+	{
+		String firstString="Hello how are you today.Is the weather hot or Cold";
+	StringBuilder stringbuilder = new StringBuilder();
+	System.out.println("Length ="+stringbuilder.length());
+	System.out.println("Capacity ="+stringbuilder.capacity());
+	stringbuilder.append(firstString);
+	System.out.println("Buffer ="+stringbuilder);
+	System.out.println("Length ="+stringbuilder.length());
+	System.out.println("capacity ="+stringbuilder.capacity());
+	
+	firstString="Wish it rains this week";
+	stringbuilder.append(firstString);
+	System.out.println("Buffer ="+stringbuilder);
+	System.out.println("Length ="+stringbuilder.length());
+	System.out.println("capacity ="+stringbuilder.capacity());
+	
+	// reduce capacity to length
+	stringbuilder.trimToSize();
+	System.out.println("\tLength ="+stringbuilder.length());
+	System.out.println("\tcapacity ="+stringbuilder.capacity());
+	}
+
+}
