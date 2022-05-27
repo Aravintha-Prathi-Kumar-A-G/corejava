@@ -18,7 +18,7 @@ public class ListArrayListDemo {
 	{
 		for(int i=0;i<5;i++)
 		{
-			Emp e1 =new Emp(i);
+			Emp e1 =new Emp(i," ");
 			e1.Name ="Emp"+i;
 			empArrayList.add(e1);
 			
@@ -27,7 +27,7 @@ public class ListArrayListDemo {
 		Emp e3 =(Emp) empArrayList.get(4);
 		empArrayList.add(e3);
 		System.out.println("Size of empArrayList after additions : "+empArrayList.size());
-		Emp e4=new Emp(4);
+		Emp e4=new Emp(4, "");
 		e4.Name="Elon Musk";
 		empArrayList.add(e4);
 		//empArrayList.add(new Emp (4));

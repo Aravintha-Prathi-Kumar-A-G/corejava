@@ -24,7 +24,7 @@ public class Third {
 	System.out.println("float max value="+floatmax);
 	System.out.println("float min value="+floatmin);
 	double doublemax=2147;
-	double doublemin=;
+	double doublemin=5;
 	}
 
 }
